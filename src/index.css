@@ -1,3 +1,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom responsive utilities */
+@layer utilities {
+  /* Hide elements on specific breakpoints */
+  .hide-on-mobile {
+    @apply hidden sm:block;
+  }
+  
+  .hide-on-desktop {
+    @apply block sm:hidden;
+  }
+  
+  /* Custom container queries for better responsive behavior */
+  .container-responsive {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+    max-width: min(100%, 1280px);
+  }
+  
+  /* Improved touch targets for mobile */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+  
+  /* Better text scaling for mobile */
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+  
+  .heading-responsive {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+}
+
+/* Smooth scrolling for better mobile experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better focus states for accessibility */
+*:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* Improved button hover states for touch devices */
+@media (hover: none) {
+  .hover\:scale-105:hover {
+    transform: none;
+  }
+  
+  .hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+}
+
+/* Better mobile form styling */
+input, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Improved mobile navigation */
+@media (max-width: 1023px) {
+  .mobile-nav-open {
+    overflow: hidden;
+  }
+  
+  .mobile-nav-open body {
+    overflow: hidden;
+  }
+}
+
+/* Better mobile card shadows */
+@media (max-width: 640px) {
+  .shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  }
+}
+
+/* Improved mobile button sizing */
+@media (max-width: 640px) {
+  .btn-mobile {
+    @apply px-4 py-3 text-sm;
+  }
+}
+
+/* Better mobile spacing */
+@media (max-width: 640px) {
+  .mobile-spacing {
+    @apply space-y-4;
+  }
+  
+  .mobile-padding {
+    @apply p-4;
+  }
+}
+
+/* Enhanced mobile grid layouts */
+@media (max-width: 640px) {
+  .mobile-grid {
+    @apply grid-cols-1 gap-4;
+  }
+}
+
+/* Better mobile typography */
+@media (max-width: 640px) {
+  .mobile-text {
+    @apply text-sm leading-relaxed;
+  }
+  
+  .mobile-heading {
+    @apply text-xl font-bold;
+  }
+}
