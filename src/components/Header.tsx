@@ -50,10 +50,10 @@ const Header = () => {
 
           {/* Desktop Contact & CTA */}
           <div className="hidden lg:flex items-center space-x-3 xl:space-x-4">
-            <a href="tel:+919876543210" className="flex items-center text-orange-600 hover:text-orange-700 transition-colors group">
+            <a href="tel:+919618300669" className="flex items-center text-orange-600 hover:text-orange-700 transition-colors group">
               <Phone className="w-4 h-4 mr-1 group-hover:scale-110 transition-transform" />
-              <span className="text-sm font-medium hidden xl:inline">+91 98765 43210</span>
-              <span className="text-sm font-medium xl:hidden">+91 98765 43210</span>
+              <span className="text-sm font-medium hidden xl:inline">+91 96183 00669</span>
+              <span className="text-sm font-medium xl:hidden">+91 96183 00669</span>
             </a>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -100,9 +100,9 @@ const Header = () => {
               
               {/* Mobile Contact & CTA Section */}
               <div className="px-4 py-4 space-y-3 border-t border-orange-100 mt-3 bg-orange-50/50 rounded-xl">
-                <a href="tel:+919876543210" className="flex items-center text-orange-600 hover:text-orange-700 transition-colors p-2 rounded-lg hover:bg-orange-100">
+                <a href="tel:+919618300669" className="flex items-center text-orange-600 hover:text-orange-700 transition-colors p-2 rounded-lg hover:bg-orange-100">
                   <Phone className="w-5 h-5 mr-3" />
-                  <span className="text-base font-medium">+91 98765 43210</span>
+                  <span className="text-base font-medium">+91 96183 00669</span>
                 </a>
                 <button 
                   onClick={() => scrollToSection('contact')}
