@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Building2, Heart, Factory, ShoppingBag, Sparkles, CheckCircle } from 'lucide-react';
+import { GraduationCap, Building2, Heart, Factory, ShoppingBag, Sparkles, CheckCircle, Network } from 'lucide-react';
 
 const Industries = () => {
   const industries = [
@@ -52,6 +52,30 @@ const Industries = () => {
       benefits: ['POS system integration', 'Inventory tracking', 'Customer analytics', 'Security systems'],
       gradient: 'from-orange-600 to-orange-800',
       bgGradient: 'from-orange-50 to-orange-100'
+    },
+    {
+      icon: Network,
+      title: 'Enterprise IT Solutions',
+      description: 'Complete IT infrastructure and technology solutions for businesses of all sizes with comprehensive support.',
+      benefits: [
+        'Network Design and Implementation',
+        'Cloud Computing and Migration',
+        'Cybersecurity and Data Protection',
+        'Firewalls',
+        'VPN for Multi Branch and Remote Access',
+        'Wireless Point to Point and Point to Multi-point',
+        'Biometric Attendance Systems & Access Control',
+        'Public Addressing Solutions',
+        'CCTV Surveillance Supply & Installation',
+        'Servers',
+        'Internet Leased Lines',
+        'E-Mail & Web Hosting',
+        'Video & Audio Conferencing Solutions',
+        'Telephones, IP PBX, and Call Center Solutions',
+        'Structured Cabling & Networking'
+      ],
+      gradient: 'from-gray-600 to-gray-800',
+      bgGradient: 'from-gray-50 to-gray-100'
     }
   ];
 
