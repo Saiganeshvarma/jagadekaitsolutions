@@ -6,8 +6,18 @@ const Industries = () => {
     {
       icon: GraduationCap,
       title: 'Education',
-      description: 'Campus-wide Wi-Fi, student management systems, and digital classrooms with reliable connectivity.',
-      benefits: ['Campus-wide connectivity', 'Student portal systems', 'Classroom technology', 'Secure networks'],
+      description: 'Comprehensive educational technology solutions for modern learning environments with cutting-edge infrastructure.',
+      benefits: [
+        'Digital & Virtual Class Room Solutions',
+        'Interactive Display Panels',
+        'Digital Signage Display',
+        'Public Addressing Systems',
+        'CCTV Surveillance',
+        'Campus WIFI',
+        'Structured Cabling & Networking',
+        'Biometric & Access Control',
+        'IP Telephones'
+      ],
       gradient: 'from-orange-400 to-orange-600',
       bgGradient: 'from-orange-50 to-orange-100'
     },
