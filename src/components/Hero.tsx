@@ -67,7 +67,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-gray-200 shadow-sm">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span className="font-semibold text-sm sm:text-base">New York • London • Tokyo</span>
+                <span className="font-semibold text-sm sm:text-base">Hyderabad • Vijayawada • Guntur</span>
               </div>
             </div>
           </div>

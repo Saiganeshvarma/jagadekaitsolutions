@@ -7,7 +7,7 @@ const Contact = () => {
     email: '',
     phone: '',
     company: '',
-    services: [],
+    services: [] as string[],
     siteCount: '',
     userCount: '',
     timeline: '',
@@ -26,11 +26,11 @@ const Contact = () => {
   ];
 
   const handleServiceChange = (service: string) => {
-    const currentServices = formData.services as string[];
+    const currentServices = formData.services;
     const updatedServices = currentServices.includes(service)
       ? currentServices.filter(s => s !== service)
       : [...currentServices, service];
-    
+
     setFormData({ ...formData, services: updatedServices });
   };
 
@@ -57,9 +57,9 @@ const Contact = () => {
               We've received your request and will get back to you within 24 hours with a detailed proposal.
             </p>
             <p className="text-gray-600 mb-8 sm:mb-10 text-base sm:text-lg px-4">
-              In the meantime, feel free to call us at <strong className="text-orange-600">+91 98765 43210</strong> if you have any urgent questions.
+              In the meantime, feel free to call us at <strong className="text-orange-600">+91 9618300669</strong> if you have any urgent questions.
             </p>
-            <button 
+            <button
               onClick={() => setIsSubmitted(false)}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
@@ -97,7 +97,7 @@ const Contact = () => {
           <div className="lg:col-span-1 order-2 lg:order-1">
             <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl h-fit border border-orange-100">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8">Get in Touch</h3>
-              
+
               <div className="space-y-6 sm:space-y-8">
                 <div>
                   <h4 className="font-bold text-gray-900 mb-3 sm:mb-4 flex items-center">
@@ -127,7 +127,7 @@ const Contact = () => {
                     </div>
                     Phone
                   </h4>
-                  <p className="text-gray-600 ml-10 sm:ml-13 font-medium text-sm sm:text-base">+91 98765 43210</p>
+                  <p className="text-gray-600 ml-10 sm:ml-13 font-medium text-sm sm:text-base">+91 9618300669</p>
                 </div>
 
                 <div>
@@ -148,8 +148,7 @@ const Contact = () => {
                     Business Hours
                   </h4>
                   <div className="text-gray-600 text-xs sm:text-sm ml-10 sm:ml-13 space-y-1">
-                    <p><span className="font-medium">Monday - Friday:</span> 9:00 AM - 6:00 PM</p>
-                    <p><span className="font-medium">Saturday:</span> 9:00 AM - 1:00 PM</p>
+                    <p><span className="font-medium">Monday - Saturday:</span> 9:30 AM - 6:30 PM</p>
                     <p><span className="font-medium text-orange-600">Emergency Support:</span> 24/7</p>
                   </div>
                 </div>
