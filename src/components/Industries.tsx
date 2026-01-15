@@ -111,19 +111,19 @@ const Industries = () => {
               >
                 {/* Gradient Border Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${industry.gradient} rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-300 -z-10 blur-xl`}></div>
-                
+
                 <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br ${industry.gradient} flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                
+
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-orange-600 transition-colors duration-300">
                   {industry.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {industry.description}
                 </p>
-                
+
                 <div className="space-y-2 sm:space-y-3">
                   {industry.benefits.map((benefit, idx) => (
                     <div key={idx} className="flex items-center text-xs sm:text-sm text-gray-700 group-hover:text-gray-800 transition-colors">
@@ -141,34 +141,7 @@ const Industries = () => {
           })}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16 sm:mt-20">
-          <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-white max-w-5xl mx-auto shadow-2xl relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-32 h-32 sm:w-40 sm:h-40 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl"></div>
-              <div className="absolute bottom-0 right-0 w-32 h-32 sm:w-40 sm:h-40 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl"></div>
-            </div>
-            
-            <div className="relative">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg">
-                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
-                Don't See Your Industry?
-              </h3>
-              <p className="text-gray-100 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg max-w-3xl mx-auto px-4">
-                We've successfully deployed IT infrastructure across many other sectors. Let's discuss how we can address your specific industry requirements.
-              </p>
-              <button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-              >
-                Discuss Your Requirements
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

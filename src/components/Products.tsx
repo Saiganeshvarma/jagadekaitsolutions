@@ -91,19 +91,19 @@ const Products = () => {
               >
                 {/* Gradient Border Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${category.borderGradient} rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-300 -z-10 blur-xl`}></div>
-                
+
                 <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br ${category.gradient} flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                
+
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-orange-600 transition-colors duration-300">
                   {category.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {category.description}
                 </p>
-                
+
                 <div className="border-t-2 border-gradient-to-r from-orange-200 to-gray-200 pt-4 sm:pt-6">
                   <p className="text-xs sm:text-sm text-orange-600 font-semibold mb-2">Brands we integrate:</p>
                   <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">{category.brands}</p>
@@ -134,13 +134,15 @@ const Products = () => {
             <p className="text-gray-700 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg px-4">
               Our engineers can design and configure solutions tailored to your specific requirements, budget, and timeline.
             </p>
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
+            <a
+              href="https://wa.me/919618300669?text=can%20i%20get%20more%20info"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
             >
               Talk to an Engineer
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 inline group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
