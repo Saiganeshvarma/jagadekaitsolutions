@@ -5,12 +5,12 @@ const CaseStudies = () => {
   const cases = [
     {
       title: 'Educational Campus Network',
-      challenge: 'A 500-student college needed campus-wide Wi-Fi with no dead zones and secure access control.',
-      solution: 'Deployed 45 enterprise access points with unified controller and role-based access policies.',
-      result: '100% campus coverage achieved with 99.9% uptime and improved student satisfaction.',
+      challenge: 'A multi-branch educational institution with 150 campuses required centralized CCTV, secure and scalable networking, classroom and lab connectivity, data storage, PA systems, and advanced network security',
+      solution: 'Implemented centralized surveillance with 5,000+ CCTV cameras, secure campus networks, 2,000+ lab systems, integrated PA systems, and enterprise firewalls with centralized NAS storage.',
+      result: 'Achieved unified monitoring across 150 branches, strengthened cybersecurity, improved data reliability, standardized IT infrastructure, and enhanced the overall user experience.',
       icon: Users,
-      metric: '500+',
-      metricLabel: 'Students Connected',
+      metric: '150+',
+      metricLabel: 'Campuses Connected',
       gradient: 'from-orange-400 to-orange-600',
       bgGradient: 'from-orange-50 to-orange-100'
     },
@@ -79,7 +79,7 @@ const CaseStudies = () => {
               >
                 {/* Gradient Border Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${caseStudy.gradient} rounded-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-300 -z-10 blur-xl`}></div>
-                
+
                 <div className="flex items-start justify-between mb-8">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${caseStudy.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                     <IconComponent className="w-8 h-8 text-white" />
@@ -89,11 +89,11 @@ const CaseStudies = () => {
                     <div className="text-sm text-gray-600 font-medium">{caseStudy.metricLabel}</div>
                   </div>
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 group-hover:text-orange-600 transition-colors duration-300">
                   {caseStudy.title}
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="bg-white/60 rounded-2xl p-4 border border-red-200">
                     <h4 className="font-semibold text-red-900 mb-2 flex items-center">
@@ -102,7 +102,7 @@ const CaseStudies = () => {
                     </h4>
                     <p className="text-red-700 text-sm leading-relaxed">{caseStudy.challenge}</p>
                   </div>
-                  
+
                   <div className="bg-white/60 rounded-2xl p-4 border border-blue-200">
                     <h4 className="font-semibold text-blue-900 mb-2 flex items-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
@@ -110,7 +110,7 @@ const CaseStudies = () => {
                     </h4>
                     <p className="text-blue-700 text-sm leading-relaxed">{caseStudy.solution}</p>
                   </div>
-                  
+
                   <div className="bg-white/60 rounded-2xl p-4 border border-green-200">
                     <h4 className="font-semibold text-green-900 mb-2 flex items-center">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
@@ -139,7 +139,7 @@ const CaseStudies = () => {
             <p className="text-gray-600 mb-8 leading-relaxed text-lg">
               Let's discuss how we can deliver similar results for your organization with our proven approach and expertise.
             </p>
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
             >
