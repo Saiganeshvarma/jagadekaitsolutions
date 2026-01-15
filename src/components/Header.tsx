@@ -19,7 +19,7 @@ const Header = () => {
           <div className="flex items-center space-x-2 sm:space-x-3">
             <button
               onClick={() => scrollToSection('hero')}
-              className="w-28 h-35 sm:w-60 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer focus:outline-none"
+              className="w-40 h-auto sm:w-60 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer focus:outline-none"
             >
               <img src={logo} alt="Jagadeka Logo" className="w-full h-full object-contain" />
             </button>
