@@ -96,9 +96,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('support')} className="block w-full text-left px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all duration-200 text-base font-medium">
                 Support
               </button>
-              <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all duration-200 text-base font-medium">
-                Contact
-              </button>
+
 
               {/* Mobile Contact & CTA Section */}
               <div className="px-4 py-4 space-y-3 border-t border-orange-100 mt-3 bg-orange-50/50 rounded-xl">
