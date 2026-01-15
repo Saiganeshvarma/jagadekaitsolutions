@@ -3,7 +3,7 @@ import React from 'react';
 const FloatingWhatsApp = () => {
     return (
         <a
-            href="https://wa.me/919618300669"
+            href="https://wa.me/919618300669?text=can%20i%20get%20more%20info"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/50 hover:scale-110 transition-all duration-300 animate-bounce-slow group"
