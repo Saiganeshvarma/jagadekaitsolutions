@@ -127,17 +127,22 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-8 text-orange-400">Contact</h3>
             <div className="space-y-6">
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+              <a
+                href="https://maps.app.goo.gl/2fCqE86NEMNCe7QSA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start space-x-3 group"
+              >
+                <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 group-hover:scale-110 transition-transform">
                   <MapPin className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <p className="text-gray-300 text-sm">
-                    <strong className="text-white">Reach Us:</strong> <br />
+                  <p className="text-gray-300 text-sm group-hover:text-orange-400 transition-colors">
+                    <strong className="text-white group-hover:text-orange-400 transition-colors">Reach Us:</strong> <br />
                     135-14-718, Ground Floor Dwaraka Nagar, 12th Ln, Dwaraka Nagar, Guntur, Andhra Pradesh 522034
                   </p>
                 </div>
-              </div>
+              </a>
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center">
                   <Phone className="w-4 h-4 text-white" />

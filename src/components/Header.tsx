@@ -57,12 +57,14 @@ const Header = () => {
               <span className="text-sm font-medium hidden xl:inline">+91 96183 00669</span>
               <span className="text-sm font-medium xl:hidden">+91 96183 00669</span>
             </a>
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href="https://wa.me/919618300669?text=can%20i%20get%20more%20info"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-xl font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm xl:text-base"
             >
               Request Solution
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -104,12 +106,14 @@ const Header = () => {
                   <Phone className="w-5 h-5 mr-3" />
                   <span className="text-base font-medium">+91 96183 00669</span>
                 </a>
-                <button
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-xl font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg text-base"
+                <a
+                  href="https://wa.me/919618300669?text=can%20i%20get%20more%20info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-xl font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg text-base"
                 >
                   Request Solution
-                </button>
+                </a>
               </div>
             </div>
           </div>
