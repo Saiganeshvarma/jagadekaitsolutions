@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, Download, CheckCircle, Star, MapPin, Zap, Shield, Award } from 'lucide-react';
 
+import heroBg from '../hero-bg.jpg';
+
 const Hero = () => {
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
@@ -73,11 +75,11 @@ const Hero = () => {
           {/* Right Content - Cards */}
           <div className="relative order-1 lg:order-2">
             {/* Main Card */}
-            <div className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transform rotate-1 sm:rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transition-transform duration-500">
               <img
-                src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={heroBg}
                 alt="Server Infrastructure"
-                className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-xl sm:rounded-2xl"
+                className="w-full h-48 sm:h-64 lg:h-80 object-contain rounded-xl sm:rounded-2xl"
               />
 
               {/* Floating Badge */}
