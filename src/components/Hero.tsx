@@ -24,23 +24,23 @@ const Hero = () => {
                 <Zap className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 End-to-End IT Solutions
               </div>
-              
+
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
                 IT Infrastructure &{' '}
                 <span className="bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent">
                   Security
                 </span>
               </h1>
-              
+
               <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Servers, Networks, Wi-Fi, Firewalls & CCTV—delivered with 
+                Servers, Networks, Wi-Fi, Firewalls & CCTV—delivered with
                 <span className="text-orange-600 font-semibold"> multi-vendor expertise</span>
               </p>
             </div>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button 
+              <button
                 onClick={scrollToContact}
                 className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center"
               >
@@ -74,12 +74,12 @@ const Hero = () => {
           <div className="relative order-1 lg:order-2">
             {/* Main Card */}
             <div className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transform rotate-1 sm:rotate-2 hover:rotate-0 transition-transform duration-500">
-              <img 
-                src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              <img
+                src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Server Infrastructure"
                 className="w-full h-48 sm:h-64 lg:h-80 object-cover rounded-xl sm:rounded-2xl"
               />
-              
+
               {/* Floating Badge */}
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-xl sm:rounded-2xl shadow-xl transform rotate-6 sm:rotate-12 hover:rotate-6 transition-transform duration-300">
                 <div className="text-center">
@@ -88,7 +88,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Bottom Left Card */}
             <div className="absolute -bottom-4 sm:-bottom-8 -left-4 sm:-left-8 bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl border border-gray-100 transform -rotate-2 sm:-rotate-3 hover:rotate-0 transition-transform duration-300">
               <div className="flex items-center space-x-3 sm:space-x-4">

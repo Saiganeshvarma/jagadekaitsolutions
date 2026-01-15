@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail, Sparkles } from 'lucide-react';
 
+import logo from '../logo.jpg';
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,15 +17,14 @@ const Header = () => {
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <div className="w-28 h-28 sm:w-48 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden">
+              <img src={logo} alt="Jagadeka Logo" className="w-full h-full object-contain" />
             </div>
             <div>
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
+              {/* <div className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
                 Jagadeka
-              </div>
-              <div className="text-xs text-gray-500 font-medium -mt-1 hidden xs:block">Smart Solutions</div>
-            </div>
+              </div> */}
+              <div className="text-xs text-gray-500 font-medium -mt-1 hidden xs:block"></div></div>
           </div>
 
           {/* Desktop Navigation */}
@@ -55,7 +56,7 @@ const Header = () => {
               <span className="text-sm font-medium hidden xl:inline">+91 96183 00669</span>
               <span className="text-sm font-medium xl:hidden">+91 96183 00669</span>
             </a>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-xl font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 text-sm xl:text-base"
             >
@@ -97,14 +98,14 @@ const Header = () => {
               <button onClick={() => scrollToSection('contact')} className="block w-full text-left px-4 py-3 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all duration-200 text-base font-medium">
                 Contact
               </button>
-              
+
               {/* Mobile Contact & CTA Section */}
               <div className="px-4 py-4 space-y-3 border-t border-orange-100 mt-3 bg-orange-50/50 rounded-xl">
                 <a href="tel:+919618300669" className="flex items-center text-orange-600 hover:text-orange-700 transition-colors p-2 rounded-lg hover:bg-orange-100">
                   <Phone className="w-5 h-5 mr-3" />
                   <span className="text-base font-medium">+91 96183 00669</span>
                 </a>
-                <button 
+                <button
                   onClick={() => scrollToSection('contact')}
                   className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-xl font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200 shadow-lg text-base"
                 >
