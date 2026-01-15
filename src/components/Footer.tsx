@@ -133,9 +133,8 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">
-                    <strong className="text-white">Hyderabad HQ:</strong><br />
-                    B-811, Aakriti Honey Dew,<br />
-                    Tellapur, Telangana 500019
+                    <strong className="text-white">Reach Us:</strong> <br />
+                    135-14-718, Ground Floor Dwaraka Nagar, 12th Ln, Dwaraka Nagar, Guntur, Andhra Pradesh 522034
                   </p>
                 </div>
               </div>
