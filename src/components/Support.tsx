@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeadphonesIcon, Clock, CheckCircle, ExternalLink, Sparkles, Shield, Zap } from 'lucide-react';
 
 const Support = () => {
@@ -31,7 +30,7 @@ const Support = () => {
   ];
 
   return (
-    <section id="support" className="py-24 bg-gradient-to-br from-orange-50 via-white to-gray-50 relative overflow-hidden">
+    <section id="support" className="py-8 sm:py-12 bg-gradient-to-br from-orange-50 via-white to-gray-50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-80 h-80 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -39,23 +38,23 @@ const Support = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-6">
             <Sparkles className="w-4 h-4 mr-2" />
             24/7 Support
           </div>
-          <div className="w-24 h-24 mx-auto mb-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl flex items-center justify-center shadow-xl">
+          <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl flex items-center justify-center shadow-xl">
             <HeadphonesIcon className="w-12 h-12 text-white" />
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">Support & Maintenance</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Support & Maintenance</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive support services to keep your IT infrastructure running smoothly with defined SLAs and proactive monitoring
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">Our Support Promise</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Support Promise</h3>
             <div className="space-y-6">
               <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg border border-orange-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -66,7 +65,7 @@ const Support = () => {
                   <p className="text-gray-600">24/7 monitoring of critical systems with automated alerts and preventive maintenance.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-gray-500 to-gray-600 rounded-xl flex items-center justify-center flex-shrink-0">
                   <CheckCircle className="w-6 h-6 text-white" />
@@ -76,7 +75,7 @@ const Support = () => {
                   <p className="text-gray-600">Clear service level agreements with guaranteed response times and resolution targets.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg border border-orange-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Zap className="w-6 h-6 text-white" />
@@ -86,7 +85,7 @@ const Support = () => {
                   <p className="text-gray-600">Certified engineers with deep expertise across multiple technology platforms.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4 p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-700 rounded-xl flex items-center justify-center flex-shrink-0">
                   <Clock className="w-6 h-6 text-white" />
@@ -145,7 +144,7 @@ const Support = () => {
                     Most Popular
                   </div>
                 )}
-                
+
                 <div className="text-center mb-8">
                   <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${tier.gradient} rounded-2xl flex items-center justify-center shadow-lg`}>
                     <HeadphonesIcon className="w-8 h-8 text-white" />
@@ -158,7 +157,7 @@ const Support = () => {
                     {tier.availability}
                   </div>
                 </div>
-                
+
                 <ul className="space-y-4">
                   {tier.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-gray-700">
@@ -187,7 +186,7 @@ const Support = () => {
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
               Our support team is ready to discuss the right support tier for your organization and answer any questions about our service offerings.
             </p>
-            <button 
+            <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >

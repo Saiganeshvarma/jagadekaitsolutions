@@ -1,4 +1,3 @@
-import React from 'react';
 import { Target, Award, Clock, Users, Sparkles } from 'lucide-react';
 
 const About = () => {
@@ -30,7 +29,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-8 sm:py-12 bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
@@ -38,13 +37,13 @@ const About = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
           <div>
-            <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium mb-4">
               <Sparkles className="w-4 h-4 mr-2" />
               Our Story
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 mb-8">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
               About Jagadeka Smart Solutions
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">

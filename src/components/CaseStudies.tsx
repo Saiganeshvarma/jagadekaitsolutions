@@ -50,7 +50,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
+    <section className="py-8 sm:py-12 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-80 h-80 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
