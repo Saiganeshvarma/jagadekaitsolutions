@@ -74,7 +74,7 @@ const About = () => {
             <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <img
                 src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Team collaboration"
+                alt="Jagadeka Smart Solutions Team of Certified Engineers"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
 

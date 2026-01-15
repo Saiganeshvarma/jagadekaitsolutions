@@ -1,4 +1,3 @@
-import React from 'react';
 import { GraduationCap, Building2, Heart, Factory, ShoppingBag, Sparkles, CheckCircle, Network } from 'lucide-react';
 
 const Industries = () => {
@@ -96,7 +95,7 @@ const Industries = () => {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Industries We Serve</h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Tailored IT infrastructure solutions for diverse business sectors with industry-specific expertise
+            Tailored IT infrastructure solutions for Schools, Colleges, Hospitals & Corporates across Hyderabad, Vijayawada & Guntur.
           </p>
         </div>
 

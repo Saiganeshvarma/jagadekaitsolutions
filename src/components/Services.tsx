@@ -1,74 +1,126 @@
 import React, { useState } from 'react';
-import { Server, Network, Shield, Wifi, Settings, ArrowRight, X, Sparkles } from 'lucide-react';
+import { Network, Shield, Wifi, Settings, ArrowRight, X, Sparkles, Camera, Monitor, Database, Mic2, HardDrive } from 'lucide-react';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState<number | null>(null);
 
   const services = [
     {
-      icon: Server,
-      title: 'Server & Data Center',
-      description: 'Physical and virtual server deployment, configuration, and management for scalable enterprise infrastructure.',
+      icon: Camera,
+      title: 'CCTV & Surveillance',
+      description: 'High-definition IP cameras, NVRs, and biometric access control for schools, colleges, and offices.',
       details: {
-        problem: 'Organizations need reliable, scalable server infrastructure that can handle growing data demands.',
-        approach: 'We design and deploy enterprise-grade server solutions with redundancy and optimization.',
-        deliverables: ['Server hardware selection', 'Virtual machine setup', 'Storage configuration', 'Backup solutions'],
-        outcomes: 'Reduced downtime, improved performance, and future-ready scalability.'
+        problem: 'Security threats and unauthorized access require 24/7 monitoring and evidence-grade recording.',
+        approach: 'Strategic placement of HD cameras with remote viewing and AI-based analytics.',
+        deliverables: ['IP/Analog Cameras', 'NVR/DVR Setup', 'Biometric Access', 'Remote Monitoring App'],
+        outcomes: 'Enhanced campus security, theft prevention, and real-time personnel monitoring.'
       },
       gradient: 'from-orange-400 via-orange-500 to-orange-600',
       bgGradient: 'from-orange-50 to-orange-100'
     },
     {
-      icon: Network,
-      title: 'Network Services',
-      description: 'Comprehensive switching, routing, structured cabling, and wireless network infrastructure.',
+      icon: Monitor,
+      title: 'Smart Classroom Solutions',
+      description: 'Interactive flat panels, digital boards, and projector systems for modern educational institutions.',
       details: {
-        problem: 'Complex networking requirements demand expert design and flawless implementation.',
-        approach: 'Multi-vendor expertise ensures optimal network architecture tailored to your needs.',
-        deliverables: ['Network design', 'Structured cabling', 'Switch/router configuration', 'Performance optimization'],
-        outcomes: 'Seamless connectivity, improved bandwidth utilization, and network reliability.'
+        problem: 'Traditional teaching methods lack engagement; schools need digital tools for interactive learning.',
+        approach: 'Deploying touch-enabled smart boards and digital content delivery systems.',
+        deliverables: ['Interactive Flat Panels', 'Digital Smart Boards', 'Projectors & Screens', 'Audio Integration'],
+        outcomes: 'Immersive learning experience, digital content readiness, and modern campus appeal.'
+      },
+      gradient: 'from-blue-400 via-blue-500 to-blue-600',
+      bgGradient: 'from-blue-50 to-blue-100'
+    },
+    {
+      icon: Network,
+      title: 'Structured Cabling',
+      description: 'Certified Cat6/Fiber optic cabling and server rack organization for reliable enterprise connectivity.',
+      details: {
+        problem: 'Messy, unorganized cabling leads to network loops, downtime, and difficult maintenance.',
+        approach: 'ISO-standard structured cabling with proper labeling, termination, and rack management.',
+        deliverables: ['Cat6/Fiber Cabling', 'Server Rack Clean-up', 'Patch Panel Termination', 'Fluke Testing'],
+        outcomes: 'Organized reliable network, easy troubleshooting, and high-speed data transfer.'
       },
       gradient: 'from-gray-400 via-gray-500 to-gray-600',
       bgGradient: 'from-gray-50 to-gray-100'
     },
     {
-      icon: Shield,
-      title: 'Security & Surveillance',
-      description: 'Advanced firewalls, access control systems, CCTV, and biometric security solutions.',
+      icon: Database,
+      title: 'Computer Lab Setup',
+      description: 'End-to-end setup of computer labs including desktops, thin clients, networking, and furniture.',
       details: {
-        problem: 'Modern threats require comprehensive security layers protecting both digital and physical assets.',
-        approach: 'Integrated security systems combining network protection with physical surveillance.',
-        deliverables: ['Firewall deployment', 'Access control systems', 'CCTV installation', 'Biometric integration'],
-        outcomes: 'Enhanced security posture, compliance readiness, and peace of mind.'
+        problem: 'Setting up a new lab requires coordinating hardware, power, furniture, and networking.',
+        approach: 'Turnkey lab solutions handling everything from electricals to software installation.',
+        deliverables: ['Desktop/Thin Clients', 'Lab Networking', 'Power Backup (UPS)', 'Furniture Layout'],
+        outcomes: 'Ready-to-use modern computer labs optimized for exams and practical sessions.'
       },
       gradient: 'from-orange-500 via-orange-600 to-orange-700',
       bgGradient: 'from-orange-50 to-orange-100'
     },
     {
       icon: Wifi,
-      title: 'Wi-Fi & Campus Networks',
-      description: 'Enterprise-grade wireless solutions for offices, schools, and multi-site campus deployments.',
+      title: 'Campus Wi-Fi & Networking',
+      description: 'Seamless wireless coverage for large campuses, hostels, and corporate buildings.',
       details: {
-        problem: 'Users expect seamless wireless connectivity across large campuses with no dead zones.',
-        approach: 'Strategic access point placement and advanced wireless controllers for optimal coverage.',
-        deliverables: ['Site survey', 'Access point installation', 'Controller configuration', 'Coverage optimization'],
-        outcomes: 'Reliable campus-wide connectivity, improved user experience, and scalable wireless infrastructure.'
+        problem: 'Dead zones and slow internet in large campuses affect productivity and learning.',
+        approach: 'Heat-map based AP placement with controller-based roaming for seamless connectivity.',
+        deliverables: ['Enterprise Access Points', 'Wireless Controller', 'Point-to-Point Links', 'Load Balancing'],
+        outcomes: '100% Wi-Fi coverage, seamless roaming, and high-speed internet access everywhere.'
+      },
+      gradient: 'from-blue-500 via-blue-600 to-blue-700',
+      bgGradient: 'from-blue-50 to-blue-100'
+    },
+    {
+      icon: Shield,
+      title: 'Network Security & Firewall',
+      description: 'Advanced firewalls (Sophos/Fortinet) to protect data from cyber threats and ransomware.',
+      details: {
+        problem: 'Cyberattacks and ransomware threaten sensitive school and corporate data.',
+        approach: 'Deploying Next-Gen Firewalls (NGFW) with intrusion prevention and web filtering.',
+        deliverables: ['Firewall Installation', 'VPN Configuration', 'Web Filtering', 'Ransomware Protection'],
+        outcomes: 'Secured network perimeter, safe browsing for students, and data protection.'
+      },
+      gradient: 'from-red-500 via-red-600 to-red-700',
+      bgGradient: 'from-red-50 to-red-100'
+    },
+    {
+      icon: Mic2,
+      title: 'Public Address (PA) Systems',
+      description: 'Crystal clear audio systems for auditoriums, assembly halls, and emergency announcements.',
+      details: {
+        problem: 'Poor audio quality in large halls and lack of centralized announcement systems.',
+        approach: 'Acoustically designed speaker layout with zone-based paging amplifiers.',
+        deliverables: ['Ceiling/Wall Speakers', 'Amplifiers & Mixers', 'Zone Paging Mic', 'Auditorium Sound'],
+        outcomes: 'Clear communication, effective emergency alerts, and professional event audio.'
       },
       gradient: 'from-gray-500 via-gray-600 to-gray-700',
       bgGradient: 'from-gray-50 to-gray-100'
     },
     {
-      icon: Settings,
-      title: 'Ongoing AMC / Managed IT',
-      description: 'Proactive monitoring, SLA-backed support, and comprehensive maintenance through our ticketing system.',
+      icon: HardDrive,
+      title: 'Server & Storage Solutions',
+      description: 'On-premise servers and NAS storage for centralized data management and backups.',
       details: {
-        problem: 'IT infrastructure requires continuous monitoring and rapid issue resolution to prevent disruptions.',
-        approach: 'Proactive managed services with defined SLAs and responsive support through Freshdesk.',
-        deliverables: ['24/7 monitoring', 'Preventive maintenance', 'Issue resolution', 'Performance reporting'],
-        outcomes: 'Minimized downtime, predictable IT costs, and focus on core business operations.'
+        problem: 'Scattered data and risk of data loss due to hardware failure.',
+        approach: 'Centralized server/storage implementation with automated backup policies.',
+        deliverables: ['Windows/Linux Servers', 'NAS/SAN Storage', 'Active Directory', 'Automated Backups'],
+        outcomes: 'Centralized data control, user management, and disaster recovery readiness.'
       },
       gradient: 'from-orange-600 via-orange-700 to-orange-800',
       bgGradient: 'from-orange-50 to-orange-100'
+    },
+    {
+      icon: Settings,
+      title: 'Annual Maintenance (AMC)',
+      description: 'Comprehensive IT support contracts to ensure your infrastructure runs 24/7 without downtime.',
+      details: {
+        problem: 'Unexpected breakdown of hardware causes work stoppage and expensive repairs.',
+        approach: 'Preventive maintenance schedule with SLA-based on-site support.',
+        deliverables: ['On-site Support', 'Preventive Maintenance', 'Remote Level 1 Support', 'Spare Part Replacement'],
+        outcomes: 'Maximized uptime, distinct IT budget, and extended hardware lifespan.'
+      },
+      gradient: 'from-green-500 via-green-600 to-green-700',
+      bgGradient: 'from-green-50 to-green-100'
     }
   ];
 
@@ -105,19 +157,19 @@ const Services = () => {
               >
                 {/* Gradient Border Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-gray-500/20 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
-                
+
                 <div className={`w-16 h-16 sm:w-20 sm:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
-                
+
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-orange-600 transition-colors duration-300">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {service.description}
                 </p>
-                
+
                 <div className="flex items-center text-orange-600 font-semibold group-hover:text-orange-700 transition-colors text-sm sm:text-base">
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
@@ -182,7 +234,7 @@ const Services = () => {
                       <p className="text-green-700 mb-4 sm:mb-6 text-sm sm:text-base">{services[selectedService].details.outcomes}</p>
                     </div>
 
-                    <button 
+                    <button
                       onClick={() => {
                         setSelectedService(null);
                         document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Facebook, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 import logo from '../jagadeka_logo.jpg';
 
@@ -51,6 +50,36 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-8 text-orange-400">Serving Across</h3>
+            <ul className="space-y-4">
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Hyderabad (HQ)
+              </li>
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Vijayawada
+              </li>
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Guntur
+              </li>
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Visakhapatnam
+              </li>
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Warangal
+              </li>
+              <li className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="w-1 h-1 bg-orange-500 rounded-full mr-3"></div>
+                Rest of AP & TS
+              </li>
+            </ul>
           </div>
 
           {/* Quick Links */}

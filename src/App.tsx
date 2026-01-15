@@ -14,13 +14,15 @@ function App() {
   return (
     <div className="min-h-screen pt-24 sm:pt-28">
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Products />
-      <Industries />
-      <CaseStudies />
-      <Support />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Products />
+        <Industries />
+        <CaseStudies />
+        <Support />
+      </main>
       <Footer />
       <FloatingWhatsApp />
     </div>

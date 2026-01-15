@@ -33,6 +33,7 @@ const Hero = () => {
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                Premier IT Partner for <span className="text-gray-900 font-semibold">Andhra Pradesh & Telangana</span>.
                 Cloud, Networking, Wi-Fi, Firewalls, CCTV—delivered with
                 <span className="text-orange-600 font-semibold"> expert multi-vendor support.</span>
               </p>
@@ -83,7 +84,7 @@ const Hero = () => {
             <div className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transition-transform duration-500">
               <img
                 src={heroFinal}
-                alt="Server Infrastructure"
+                alt="End-to-end IT Infrastructure & Server Solutions in Hyderabad"
                 className="w-full h-48 sm:h-64 lg:h-80 object-contain rounded-xl sm:rounded-2xl"
               />
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Server, Shield, Network, Wifi, Camera, HardDrive, Sparkles, ArrowRight } from 'lucide-react';
 
 const Products = () => {
@@ -132,7 +131,7 @@ const Products = () => {
               Need a Custom Configuration?
             </h3>
             <p className="text-gray-700 mb-6 sm:mb-8 leading-relaxed text-base sm:text-lg px-4">
-              Our engineers can design and configure solutions tailored to your specific requirements, budget, and timeline.
+              Our engineers can design and configure solutions tailored to your specific requirements. Get a custom quote for your organization today.
             </p>
             <a
               href="https://wa.me/919618300669?text=can%20i%20get%20more%20info"
