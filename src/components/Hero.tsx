@@ -1,7 +1,6 @@
-import React from 'react';
-import { ArrowRight, Download, CheckCircle, Star, MapPin, Zap, Shield, Award } from 'lucide-react';
+import { ArrowRight, Download, Star, MapPin, Zap, Shield, Award } from 'lucide-react';
 
-import heroBg from '../hero-bg.jpg';
+import heroFinal from '../hero-final.jpg';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -28,15 +27,16 @@ const Hero = () => {
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight">
-                IT Infrastructure &{' '}
+                <span className="block text-gray-900">Next-Gen</span>
+                <span className="block text-gray-900">IT Infrastructure</span>
                 <span className="bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent">
-                  Security
+                  & Cybersecurity
                 </span>
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Servers, Networks, Wi-Fi, Firewalls & CCTV—delivered with
-                <span className="text-orange-600 font-semibold"> multi-vendor expertise</span>
+                Cloud, Networking, Wi-Fi, Firewalls, CCTV—delivered with
+                <span className="text-orange-600 font-semibold"> expert multi-vendor support.</span>
               </p>
             </div>
 
@@ -46,12 +46,12 @@ const Hero = () => {
                 onClick={scrollToContact}
                 className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center"
               >
-                Request a Solution
+                Get a Quote
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <button className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center group">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Company Profile
+                Download Brochure
               </button>
             </div>
 
@@ -59,15 +59,15 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center lg:justify-start">
               <div className="flex items-center bg-gradient-to-r from-green-50 to-green-100 text-green-800 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-green-200 shadow-sm">
                 <Award className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span className="font-semibold text-sm sm:text-base">ISO Certified</span>
+                <span className="font-semibold text-sm sm:text-base">ISO 9001 Certified</span>
               </div>
               <div className="flex items-center bg-gradient-to-r from-orange-50 to-orange-100 text-orange-800 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-orange-200 shadow-sm">
                 <Star className="w-4 h-4 sm:w-5 sm:h-5 mr-2 fill-current" />
-                <span className="font-semibold text-sm sm:text-base">4.8★ Rated</span>
+                <span className="font-semibold text-sm sm:text-base">5.0 Star Rated</span>
               </div>
               <div className="flex items-center bg-gradient-to-r from-gray-50 to-gray-100 text-gray-800 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl border border-gray-200 shadow-sm">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                <span className="font-semibold text-sm sm:text-base">Hyderabad • Vijayawada • Guntur</span>
+                <span className="font-semibold text-sm sm:text-base">New York • London • Tokyo</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Hero = () => {
             {/* Main Card */}
             <div className="relative bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl transition-transform duration-500">
               <img
-                src={heroBg}
+                src={heroFinal}
                 alt="Server Infrastructure"
                 className="w-full h-48 sm:h-64 lg:h-80 object-contain rounded-xl sm:rounded-2xl"
               />
@@ -86,7 +86,7 @@ const Hero = () => {
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-3 sm:p-4 lg:p-6 rounded-xl sm:rounded-2xl shadow-xl transform rotate-6 sm:rotate-12 hover:rotate-6 transition-transform duration-300">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl lg:text-3xl font-bold">24/7</div>
-                  <div className="text-xs sm:text-sm font-medium opacity-90">Support</div>
+                  <div className="text-xs sm:text-sm font-medium opacity-90">Global Support</div>
                 </div>
               </div>
             </div>
