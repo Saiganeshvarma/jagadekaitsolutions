@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail, Sparkles } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 import logo from '../logo.jpg';
 
@@ -17,9 +17,12 @@ const Header = () => {
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-28 h-35 sm:w-60 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden">
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="w-28 h-35 sm:w-60 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden hover:opacity-90 transition-opacity cursor-pointer focus:outline-none"
+            >
               <img src={logo} alt="Jagadeka Logo" className="w-full h-full object-contain" />
-            </div>
+            </button>
             <div>
               {/* <div className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
                 Jagadeka

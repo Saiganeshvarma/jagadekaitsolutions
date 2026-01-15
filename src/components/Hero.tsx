@@ -6,7 +6,7 @@ const Hero = () => {
 
 
   return (
-    <section className="relative bg-gradient-to-br from-orange-50 via-white to-gray-50 py-12 sm:py-16 lg:py-20 xl:py-32 overflow-hidden">
+    <section id="hero" className="relative bg-gradient-to-br from-orange-50 via-white to-gray-50 py-12 sm:py-16 lg:py-20 xl:py-32 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-4 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
