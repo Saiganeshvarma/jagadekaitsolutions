@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Award, Clock, Users, Sparkles, ArrowRight, CheckCircle } from 'lucide-react';
+import { Target, Award, Clock, Users, Sparkles } from 'lucide-react';
 
 const About = () => {
   const values = [
@@ -123,39 +123,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-24 bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-3xl p-12 text-center text-white relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-40 h-40 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl"></div>
-            <div className="absolute bottom-0 right-0 w-40 h-40 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl"></div>
-          </div>
 
-          <div className="relative">
-            <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
-              <CheckCircle className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-3xl font-bold mb-6">Ready to Partner With Us?</h3>
-            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Experience the difference of working with a truly committed IT infrastructure partner who puts your success first.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 group"
-              >
-                Start Your Project
-                <ArrowRight className="w-5 h-5 ml-2 inline group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button
-                onClick={() => document.getElementById('support')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 group"
-              >
-                Existing Customer Support
-                <ArrowRight className="w-5 h-5 ml-2 inline group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

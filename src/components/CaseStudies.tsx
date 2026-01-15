@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Users, Clock, CheckCircle, Sparkles, ArrowRight } from 'lucide-react';
+import { TrendingUp, Users, Clock, CheckCircle, Sparkles } from 'lucide-react';
 
 const CaseStudies = () => {
   const cases = [
@@ -128,26 +128,7 @@ const CaseStudies = () => {
           })}
         </div>
 
-        <div className="text-center mt-20">
-          <div className="bg-white border-2 border-orange-200 rounded-3xl p-12 max-w-4xl mx-auto shadow-xl">
-            <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
-              <Sparkles className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
-              Ready to Create Your Success Story?
-            </h3>
-            <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-              Let's discuss how we can deliver similar results for your organization with our proven approach and expertise.
-            </p>
-            <button
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-2xl font-semibold text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 group"
-            >
-              Start Your Project
-              <ArrowRight className="w-5 h-5 ml-2 inline group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
-        </div>
+
       </div>
     </section>
   );
