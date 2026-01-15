@@ -17,7 +17,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-28 h-28 sm:w-48 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden">
+            <div className="w-28 h-35 sm:w-60 sm:h-auto rounded-xl flex items-center justify-center overflow-hidden">
               <img src={logo} alt="Jagadeka Logo" className="w-full h-full object-contain" />
             </div>
             <div>
