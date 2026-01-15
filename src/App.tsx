@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -12,7 +12,7 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-24 sm:pt-28">
       <Header />
       <Hero />
       <About />

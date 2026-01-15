@@ -49,10 +49,15 @@ const Hero = () => {
                 Get a Quote
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
-              <button className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center group">
+              <a
+                href="https://drive.google.com/file/d/1oDg8ze4UizyQAjF1ngB0GxMJNWRQgzbX/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center group"
+              >
                 <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Download Brochure
-              </button>
+              </a>
             </div>
 
             {/* Trust Indicators */}
