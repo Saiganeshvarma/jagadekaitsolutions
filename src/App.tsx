@@ -7,7 +7,6 @@ import Industries from './components/Industries';
 import CaseStudies from './components/CaseStudies';
 import About from './components/About';
 import Support from './components/Support';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 
@@ -22,7 +21,7 @@ function App() {
       <CaseStudies />
       <About />
       <Support />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
       <FloatingWhatsApp />
     </div>

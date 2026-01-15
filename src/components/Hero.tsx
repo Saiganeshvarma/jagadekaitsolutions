@@ -3,9 +3,7 @@ import { ArrowRight, Download, Star, MapPin, Zap, Shield, Award } from 'lucide-r
 import heroFinal from '../hero-final.jpg';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+
 
   return (
     <section className="relative bg-gradient-to-br from-orange-50 via-white to-gray-50 py-12 sm:py-16 lg:py-20 xl:py-32 overflow-hidden">
@@ -42,13 +40,15 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button
-                onClick={scrollToContact}
+              <a
+                href="https://wa.me/919618300669?text=Can%20i%20get%20more%20info"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 flex items-center justify-center"
               >
                 Get a Quote
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
               <button className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center justify-center group">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Download Brochure

@@ -44,9 +44,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('support')} className="text-gray-700 hover:text-orange-600 font-medium transition-all duration-200 hover:scale-105 text-sm xl:text-base">
               Support
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-orange-600 font-medium transition-all duration-200 hover:scale-105 text-sm xl:text-base">
-              Contact
-            </button>
+
           </nav>
 
           {/* Desktop Contact & CTA */}
